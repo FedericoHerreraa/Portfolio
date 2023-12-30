@@ -1,0 +1,43 @@
+
+
+.container {
+    background-color: #424242;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #d9d9d9;
+    font-size: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+}
+
+.imagenes {
+    display: flex
+}
+
+.img img {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+
+.info {
+    padding: 40px;
+    color: #5c7196;
+    font-size: large;
+}
+
+
