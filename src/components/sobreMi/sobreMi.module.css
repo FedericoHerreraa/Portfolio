@@ -1,7 +1,7 @@
 
 
 .container {
-    background-color: #424242;
+    background-color: #1c1c1c;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -11,33 +11,56 @@
 .titulo {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     color: #d9d9d9;
     font-size: 20px;
-    border-bottom: 1px solid #d9d9d9;
-    padding-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 180px;
-}
-
-.imagenes {
-    display: flex
-}
-
-.img img {
-    height: 300px;
+    margin-top: 60px;
     width: 300px;
-    padding: 10px;
-    border-radius: 30px;
-
+    background-color: #363636;
 }
 
+.titulo h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #5c7196;
+}
 
 .info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 60vh;
     padding: 40px;
-    color: #5c7196;
+    color: white;
     font-size: large;
+}
+
+.infoContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.habilidades {
+    border: 1px solid grey;
+    padding: 20px;
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 45vh;
+}
+
+.certificaciones {
+    border: 1px solid grey;
+    padding: 20px;
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 10px;
 }
 
 

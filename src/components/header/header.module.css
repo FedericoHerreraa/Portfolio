@@ -11,13 +11,13 @@
 
 .containerOscuro {
     height: 100vh;
-    background: linear-gradient(black, grey);
+    background-color: #1c1c1c;
 }
 
 .headerContainerClaro {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     height: 65px;
     width: 100%;
     color: black;
@@ -25,8 +25,8 @@
 
 .headerContainerOscuro {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     height: 65px;
     width: 100%;
     color: #f2f2f2;
@@ -39,14 +39,10 @@
 
 .navInfo {
     display: flex;
-    align-items: flex-start;
-}
-
-.navInfo p {
-    margin-right: 40px;
-    font-weight: 600;
+    justify-content: center;
     cursor: pointer;
 }
+
 
 .titulo {
     margin-left: 20px;
@@ -54,6 +50,7 @@
 
 .btnClaro {
     margin-right: 40px;
+    margin-left: 40px;
     background: none;
     color: black;
     font-weight: 600;
@@ -64,20 +61,13 @@
 
 .btnOscuro {
     margin-right: 40px;
+    margin-left: 40px;
     background: none;
     color: white;
     border: none;
     font-weight: 600;
     cursor: pointer;
     font-size: 17px;
-}
-
-.degradadoClaro {
-    padding-top: 100px;
-}
-
-.degradadoOscuro {
-    padding-top: 100px;
 }
 
 .imgPersonal {
@@ -92,7 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 80px;
     font-size: 30px;
     color: black;
 }
@@ -101,11 +91,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 80px;
     font-size: 30px;
     color: #f2f2f2;
 }
-
+ 
 .degradadoOscuro div h1 {
     color: #5c7196;
 }

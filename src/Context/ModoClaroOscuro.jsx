@@ -16,5 +16,5 @@ export const ModoProvider = ({ children }) => {
 
 export const useModo = () => {
     return useContext(ContextModo)
-}
+}  
 

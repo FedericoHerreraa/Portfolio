@@ -12,24 +12,21 @@ const Header = () => {
         window.scrollTo({
             top: window.innerHeight,
             behavior: 'smooth'
-        })
+        });
     }
     
     return (
         <div className={modo ? stylesHeader.containerClaro : stylesHeader.containerOscuro}>
             <div className={modo ? stylesHeader.headerContainerClaro: stylesHeader.headerContainerOscuro}>
-                <div>
-                    <h2 className={stylesHeader.titulo}>Portafolio</h2>
-                </div>
                 <div className={stylesHeader.navInfo}>
+                    <h3>Proyectos</h3>
                     <button
                         className={modo ? stylesHeader.btnClaro : stylesHeader.btnOscuro}
                         onClick={cambiarModo}
                     >
                         {modo ? <DarkModeIcon/> : <LightModeIcon/>}
                     </button>
-                    <p>Proyectos</p>
-                    <p>Contacto</p>
+                    <h3>Contacto</h3>
                 </div>
             </div>
             <div className={modo ? stylesHeader.degradadoClaro : stylesHeader.degradadoOscuro}>
@@ -37,7 +34,7 @@ const Header = () => {
                     <div className={stylesHeader.imgPersonal}>
                     </div>
                     <h1>Federico Herrera</h1>
-                    <p style={{ fontSize: '23px', marginTop: '20px'}}>Desarrollador web Front-End</p>
+                    <p style={{ fontSize: '23px', marginTop: '20px'}}>Desarrollador Full-Stack</p>
                     <div onClick={desplazamiento} className={stylesHeader.icon}>
                        <ExpandMoreIcon fontSize='large'/>
                     </div>

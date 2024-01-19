@@ -1,0 +1,13 @@
+
+
+.container {
+    background-color: #1c1c1c;
+    min-height: 100vh;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
