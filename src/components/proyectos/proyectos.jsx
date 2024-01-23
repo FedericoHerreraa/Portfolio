@@ -22,8 +22,7 @@ const Proyectos = () => {
                 </div>
                 <a href='https://aromasplc.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <div style={{ backgroundImage: 'url("/src/img/aromasplcScreen.png")', width: '100%', height: '100%'}}></div>
-                        {/* <img src="/src/img/aromasplcScreen.png" alt="" width='100%' height='100%'/> */}
+                        <div className={stylesProyectos.screenAromas}></div>
                     </div>
                 </a>
             </div>
