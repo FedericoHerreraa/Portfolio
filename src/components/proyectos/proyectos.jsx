@@ -22,11 +22,11 @@ const Proyectos = () => {
                 </div>
                 <a href='https://aromasplc.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <img src="/src/img/aromasplcScreen.png" alt="" width='100%' height='100%'/>
+                        <div style={{ backgroundImage: 'url("/src/img/aromasplcScreen.png")', width: '100%', height: '100%'}}></div>
+                        {/* <img src="/src/img/aromasplcScreen.png" alt="" width='100%' height='100%'/> */}
                     </div>
                 </a>
             </div>
-            //actiualizaaaa
             <div className={stylesProyectos.proyecto}>
                 <h2>All New Style</h2>
                 <p>Proyecto realizado para un curso de React Js de CoderHouse. Este proyecto está desarrollado en React Js para el Front-End y Firebase para simular el Back-End</p>
