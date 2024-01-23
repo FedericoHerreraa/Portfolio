@@ -26,6 +26,7 @@ const Proyectos = () => {
                     </div>
                 </a>
             </div>
+            //actiualizaaaa
             <div className={stylesProyectos.proyecto}>
                 <h2>All New Style</h2>
                 <p>Proyecto realizado para un curso de React Js de CoderHouse. Este proyecto está desarrollado en React Js para el Front-End y Firebase para simular el Back-End</p>
