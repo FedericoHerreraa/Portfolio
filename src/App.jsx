@@ -3,6 +3,7 @@ import { ModoProvider } from './Context/ModoClaroOscuro'
 import Header from './components/header/header'
 import SobreMi from './components/sobreMi/sobreMi'
 import Proyectos from './components/proyectos/proyectos'
+import Contacto from './components/contacto/contacto'
 
 function App() {            
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header/>
       <SobreMi/>
       <Proyectos/>
+      <Contacto/>
     </ModoProvider>
   )
 }
