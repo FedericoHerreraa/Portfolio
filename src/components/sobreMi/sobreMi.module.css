@@ -30,6 +30,7 @@
 }
 
 .info {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
@@ -44,8 +45,6 @@
 
 .infoContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     margin-top: 60px;
 }
