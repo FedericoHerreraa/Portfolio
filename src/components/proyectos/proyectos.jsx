@@ -1,5 +1,6 @@
 import stylesProyectos from './proyectos.module.css'
 import CodeIcon from '@mui/icons-material/Code';
+import screenAromas from '../../img/aromasplcScreen.png'
 
 
 const Proyectos = () => {
@@ -22,7 +23,7 @@ const Proyectos = () => {
                 </div>
                 <a href='https://aromasplc.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <img src="src/img/aromasplcScreen.png" alt="" width='100%' height='100%' />
+                        <img style={{ backgroundImage: `url(${screenAromas})`, width: '100%', height: '100%'}} alt=""/>
                     </div>
                 </a>
             </div>
