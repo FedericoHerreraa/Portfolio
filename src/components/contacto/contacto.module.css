@@ -32,37 +32,69 @@
 .info {
     color: white;
     margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
-
 .info div {
     display: flex;
     align-items: center;
-    margin-bottom: 20%;
     cursor: pointer;
+    margin-bottom: 5%;
 }
 
 .info div:hover {
     text-decoration: underline;
 }
 
-.info div img {
-    margin-right: 10%;
-}
 
 .info div a {
     display: flex;
     align-items: center;
-    margin-bottom: 3%;
+    justify-content: flex-start;
+    margin-bottom: 5%;
     cursor: pointer;
     text-decoration: none;
     color: white;
-    width: 100%;
+    width: 300px;
 }
 
-.info div:hover {
-    text-decoration: underline;
+.gmailLogo {
+    background-image: url('/src/img/gmail-logo-48.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
 }
 
-.info div a img {
-    margin-right: 10%;
+.phoneLogo {
+    background-image: url('/src/img/phone-solid-48.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.linkedinLogo {
+    background-image: url('/src/img/linkedin-logo-48.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-right: 3%;
+}
+
+.githubLogo {
+    background-image: url('/src/img/github-logo-48.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-right: 3%;
 }

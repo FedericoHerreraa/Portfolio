@@ -69,9 +69,44 @@
 
 .screenAromas {
     background-image: url('/src/img/aromasplcScreen.png');
-    background-size: cover;
-    width: 1000px;
-    height: 500px;
+    background-size: 100% 100%;
+    width: 55vw;
+    height: 25vw;
+}
+
+.screenAllNew {
+    background-image: url('/src/img/allnewstyleScreen.png');
+    background-size: 100% 100%;
+    width: 55vw;
+    height: 25vw;
+}
+
+.reactLogo {
+    background-image: url('/src/img/react-logo-48.png');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.nodejsLogo {
+    background-image: url('/src/img/nodejs-logo-48.png');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.mongodbLogo {
+    background-image: url('/src/img/mongodb-logo-48.png');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.firebaseLogo {
+    background-image: url('/src/img/firebase-logo-48.png');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
 }
 
 
