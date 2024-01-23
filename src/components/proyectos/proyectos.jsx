@@ -22,7 +22,8 @@ const Proyectos = () => {
                 </div>
                 <a href='https://aromasplc.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <img src="src/img/aromasplcScreen.png" alt="" width='100%' height='100%' />
+                        <div className={stylesProyectos.screenAromas}></div>
+                        {/* <img src="src/img/aromasplcScreen.png" alt="" width='100%' height='100%' /> */}
                     </div>
                 </a>
             </div>
@@ -35,7 +36,7 @@ const Proyectos = () => {
                 </div>
                 <a href='https://allnewstyle-five.vercel.app/' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <img src="src/img/allnewstyleScreen.png" alt="" width='100%' height='100%' />
+                        <img src="/src/img/allnewstyleScreen.png" alt="" width='100%' height='100%' />
                     </div>
                 </a>
             </div>
