@@ -40,10 +40,35 @@
     font-size: large;
 }
 
+.info div p {
+    line-height: 28px;
+}
+
 .infoContainer {
     display: flex;
     width: 100%;
     margin-top: 60px;
+}
+
+.listado {
+    padding: 30px;
+    margin-left: 5%;
+    line-height: 35px;
+}
+
+.listadoCertificaciones {
+    padding: 30px;
+    margin-left: 5%;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.listadoCertificaciones a {
+    text-decoration-color: #1c1c1c;
+}
+
+.listadoCertificaciones li:hover {
+    text-decoration: underline;
 }
 
 .habilidades {

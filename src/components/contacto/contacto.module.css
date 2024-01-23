@@ -48,3 +48,21 @@
 .info div img {
     margin-right: 10%;
 }
+
+.info div a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+.info div:hover {
+    text-decoration: underline;
+}
+
+.info div a img {
+    margin-right: 10%;
+}

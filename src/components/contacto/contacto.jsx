@@ -19,12 +19,16 @@ const Contacto = () => {
                     <h2>+54 9 11 6296-4493</h2>
                 </div>
                 <div>
-                    <img src="src/img/linkedin-logo-48.png" alt="" />
-                    <h2>Federico Herrera</h2>
+                    <a href="https://www.linkedin.com/in/federico-herrera-828636244/" target='blank'>
+                        <img src="src/img/linkedin-logo-48.png" alt="" />
+                        <h2>Federico Herrera</h2>
+                    </a>
                 </div>
                 <div>
-                    <img src="src/img/github-logo-48.png" alt="" />
-                    <h2>FedericoHerreraa</h2>
+                    <a href="https://github.com/FedericoHerreraa" target='blank'>
+                        <img src="src/img/github-logo-48.png" alt="" />
+                        <h2>FedericoHerreraa</h2>
+                    </a>
                 </div>
             </div>
         </div>
