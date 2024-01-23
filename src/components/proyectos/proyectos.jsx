@@ -22,7 +22,7 @@ const Proyectos = () => {
                 </div>
                 <a href='https://aromasplc.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <img style='background-image: url("src/img/allnewstyleScreen.png"); width: 100%; height: 100%;'/>
+                        <div style='background-image: url("src/img/allnewstyleScreen.png"); width: 100%; height: 100%;'></div>
                     </div>
                 </a>
             </div>
