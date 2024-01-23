@@ -109,5 +109,36 @@
     height: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    .title {
+        margin-bottom: 80px;
+    }
+
+    .proyecto {
+        width: 70%;
+        padding-bottom: 25%;
+    }
+
+    .tecnologias {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .tecnologias a {
+        margin-right: 10px;
+    }
+
+    .screen {
+        margin-top: 10%;
+    }
+
+    .screenAllNew,
+    .screenAromas {
+        width: 80vw;
+        height: 40vw;
+    }
+
+}
+
 
 

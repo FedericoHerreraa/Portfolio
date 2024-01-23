@@ -41,6 +41,7 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
+    align-items: center;
 }
 
 
@@ -57,6 +58,7 @@
     border: none;
     cursor: pointer;
     font-size: 17px;
+    margin-top: 5%;
 }
 
 .btnOscuro {
@@ -68,6 +70,7 @@
     font-weight: 600;
     cursor: pointer;
     font-size: 17px;
+    margin-top: 5%;
 }
 
 .imgPersonal {
@@ -78,7 +81,7 @@
     width: 200px;
 }
 
-.degradadoClaro div {
+.info div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +90,7 @@
     color: black;
 }
 
-.degradadoOscuro div {
+.info div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,15 +99,26 @@
     color: #f2f2f2;
 }
  
-.degradadoOscuro div h1 {
+.info div h1 {
     color: #5c7196;
 }
 
-.degradadoClaro div h1 {
+.info div h1 {
     color: #404d63;
 }
 
 .icon {
     margin-top: 10%;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .info div {
+        margin-top: 17%;
+    } 
+
+    .info div h1 {
+        font-size: 45px;
+        margin-top: 35px;
+    }
 }

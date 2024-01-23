@@ -8,6 +8,20 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Header = () => {
     const { modo, cambiarModo } = useModo()
 
+    const desplazamientoProyectos = () => {
+        window.scrollTo({
+            top: window.innerHeight + window.innerHeight*1.1,
+            behavior:'smooth'
+        })
+    }
+
+    const desplazamientoContacto = () => {
+        window.scrollTo({
+            top: window.innerHeight + window.innerHeight*3,
+            behavior:'smooth'
+        })
+    }
+
     const desplazamiento = () => {
         window.scrollTo({
             top: window.innerHeight,
@@ -19,17 +33,21 @@ const Header = () => {
         <div className={modo ? stylesHeader.containerClaro : stylesHeader.containerOscuro}>
             <div className={modo ? stylesHeader.headerContainerClaro: stylesHeader.headerContainerOscuro}>
                 <div className={stylesHeader.navInfo}>
-                    <h3>Proyectos</h3>
+                    <div onClick={desplazamientoProyectos}>
+                        <h3>Proyectos</h3>
+                    </div>
                     <button
                         className={modo ? stylesHeader.btnClaro : stylesHeader.btnOscuro}
                         onClick={cambiarModo}
                     >
                         {modo ? <DarkModeIcon/> : <LightModeIcon/>}
                     </button>
-                    <h3>Contacto</h3>
+                    <div onClick={desplazamientoContacto}>
+                        <h3>Contacto</h3>
+                    </div>
                 </div>
             </div>
-            <div className={modo ? stylesHeader.degradadoClaro : stylesHeader.degradadoOscuro}>
+            <div className={modo ? stylesHeader.info : stylesHeader.info}>
                 <div>
                     <div className={stylesHeader.imgPersonal}>
                     </div>
