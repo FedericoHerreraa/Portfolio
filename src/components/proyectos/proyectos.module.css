@@ -138,6 +138,10 @@
         height: 40vw;
     }
 
+    .container {
+        padding-top: 60px;
+    }
+
 }
 
 
