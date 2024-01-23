@@ -8,26 +8,31 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Header = () => {
     const { modo, cambiarModo } = useModo()
 
+    const esVistaMobile = () => window.innerWidth <= 768;
+
     const desplazamientoProyectos = () => {
+        const offset = esVistaMobile() ? window.innerHeight * 1.5 : window.innerHeight + window.innerHeight * 1.1;
         window.scrollTo({
-            top: window.innerHeight + window.innerHeight*1.1,
-            behavior:'smooth'
-        })
-    }
-
-    const desplazamientoContacto = () => {
-        window.scrollTo({
-            top: window.innerHeight + window.innerHeight*3,
-            behavior:'smooth'
-        })
-    }
-
-    const desplazamiento = () => {
-        window.scrollTo({
-            top: window.innerHeight,
+            top: offset,
             behavior: 'smooth'
         });
-    }
+    };
+    
+    const desplazamientoContacto = () => {
+        const offset = esVistaMobile() ? window.innerHeight * 3 : window.innerHeight + window.innerHeight * 3;
+        window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
+        });
+    };
+    
+    const desplazamiento = () => {
+        const offset = esVistaMobile() ? 0 : window.innerHeight;
+        window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
+        });
+    };
     
     return (
         <div className={modo ? stylesHeader.containerClaro : stylesHeader.containerOscuro}>
