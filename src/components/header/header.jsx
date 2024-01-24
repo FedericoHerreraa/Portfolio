@@ -6,7 +6,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Header = () => {
-    const { modo } = useModo()
+    const { darkMode, cambiarModo } = useModo()
 
     const esVistaMobile = () => window.innerWidth <= 768;
 
@@ -35,23 +35,25 @@ const Header = () => {
     };
     
     return (
-        <div className={modo ? stylesHeader.containerClaro : stylesHeader.containerOscuro}>
-            <div className={modo ? stylesHeader.headerContainerClaro: stylesHeader.headerContainerOscuro}>
+        <div className={darkMode ? stylesHeader.containerOscuro : stylesHeader.containerClaro}>
+            <div className={darkMode ? stylesHeader.headerContainerOscuro : stylesHeader.headerContainerClaro}>
                 <div className={stylesHeader.navInfo}>
                     <div onClick={desplazamientoProyectos}>
                         <h3>Proyectos</h3>
                     </div>
                     <button
-                        className={modo ? stylesHeader.btnClaro : stylesHeader.btnOscuro}
+                        type='button'
+                        className={darkMode ? stylesHeader.btnOscuro : stylesHeader.btnClaro}
+                        onClick={cambiarModo}
                     >
-                        {modo ? <DarkModeIcon/> : <LightModeIcon/>}
+                        {darkMode ? <LightModeIcon/> : <DarkModeIcon/>}
                     </button>
                     <div onClick={desplazamientoContacto}>
                         <h3>Contacto</h3>
                     </div>
                 </div>
             </div>
-            <div className={modo ? stylesHeader.info : stylesHeader.info}>
+            <div className={darkMode ? stylesHeader.info : stylesHeader.info}>
                 <div>
                     <div className={stylesHeader.imgPersonal}>
                     </div>

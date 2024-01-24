@@ -1,14 +1,28 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const ContextModo = createContext()
 
 export const ModoProvider = ({ children }) => {
-    const [modo,setModo] = useState(false)
+    const [darkMode, setDarkMode] = useState(false)
 
-    const cambiarModo = () => setModo(!modo)
+    useEffect(() => {
+        localStorage.setItem('darkMode', darkMode)
+    })
+
+    useEffect(() => {
+        const savedModo = localStorage.getItem('darkMode')
+        console.log(savedModo)
+        setDarkMode(JSON.parse(!savedModo))
+        console.log(darkMode)
+    }, [])
+
+    const cambiarModo = () => {
+        setDarkMode(!darkMode)
+        localStorage.setItem('darkMode', JSON.stringify(darkMode))
+    };
     
     return (
-        <ContextModo.Provider value={{ modo, cambiarModo }}>
+        <ContextModo.Provider value={{ darkMode, cambiarModo }}>
             {children}
         </ContextModo.Provider>
     )
