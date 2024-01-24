@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const ContextModo = createContext()
 
 export const ModoProvider = ({ children }) => {
-    const [modo,setModo] = useState(true)
+    const [modo,setModo] = useState(false)
 
     const cambiarModo = () => setModo(!modo)
     

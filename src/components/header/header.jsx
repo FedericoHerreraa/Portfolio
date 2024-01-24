@@ -6,7 +6,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Header = () => {
-    const { modo, cambiarModo } = useModo()
+    const { modo } = useModo()
 
     const esVistaMobile = () => window.innerWidth <= 768;
 
@@ -43,7 +43,6 @@ const Header = () => {
                     </div>
                     <button
                         className={modo ? stylesHeader.btnClaro : stylesHeader.btnOscuro}
-                        onClick={cambiarModo}
                     >
                         {modo ? <DarkModeIcon/> : <LightModeIcon/>}
                     </button>
@@ -57,7 +56,7 @@ const Header = () => {
                     <div className={stylesHeader.imgPersonal}>
                     </div>
                     <h1>Federico Herrera</h1>
-                    <p style={{ fontSize: '23px', marginTop: '20px'}}>Desarrollador Full-Stack</p>
+                    <p style={{ fontSize: '23px', marginTop: '20px'}}>Desarrollador web Full-Stack</p>
                     <div onClick={desplazamiento} className={stylesHeader.icon}>
                        <ExpandMoreIcon fontSize='large'/>
                     </div>
