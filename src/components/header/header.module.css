@@ -4,24 +4,11 @@
     font-family: sans-serif;
 }
 
-.containerClaro {
-    height: 100vh;
-    background: linear-gradient(#d1d1d1, #6b7485, #3d3d3d);
-}
-
 .containerOscuro {
     height: 100vh;
     background-color: #1c1c1c;
 }
 
-.headerContainerClaro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-    width: 100%;
-    color: black;
-}
 
 .headerContainerOscuro {
     display: flex;
@@ -32,7 +19,7 @@
     color: #f2f2f2;
 }
 
-.headerContainerOscuro div, .headerContainerClaro div {
+.headerContainerOscuro div {
     margin-top: 10px;
     padding: 10px;
 }
@@ -47,18 +34,6 @@
 
 .titulo {
     margin-left: 20px;
-}
-
-.btnClaro {
-    margin-right: 40px;
-    margin-left: 40px;
-    background: none;
-    color: black;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    font-size: 17px;
-    margin-top: 5%;
 }
 
 .btnOscuro {
