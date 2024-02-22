@@ -2,6 +2,8 @@ import stylesSobreMi from './sobreMi.module.css'
 import CodeIcon from '@mui/icons-material/Code';
 
 const SobreMi = () => {
+    const isMobile = () => window.innerWidth <= 768;
+
     return (
         <div className={stylesSobreMi.container}>
             <div className={stylesSobreMi.titulo}>
@@ -63,19 +65,19 @@ const SobreMi = () => {
                         <h2>Certificaciones:</h2>
                         <div className={stylesSobreMi.listadoCertificaciones}>
                             <div className={stylesSobreMi.containerCert}>
-                                <div className={stylesSobreMi.imgCert}></div>
+                                <div className={isMobile() ? stylesSobreMi.imgCertMobile : stylesSobreMi.imgCert}></div>
                                 <a href="https://drive.google.com/file/d/1XT1YyTBEaPoMPOFklC4zEz1n4DS5gQkI/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}> Certificación de curso de HTML5 y CSS3 con Bootstrap.</a>
                             </div>
                             <div className={stylesSobreMi.containerCert}>
-                                <div className={stylesSobreMi.imgCert}></div>
+                                <div className={isMobile() ? stylesSobreMi.imgCertMobile : stylesSobreMi.imgCert}></div>
                                 <a href="https://drive.google.com/file/d/1PPhAQjQGVKoO_EfYvlk8Ks1BbmbNTfZr/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}>Certificación de curso de JavaScript en CoderHouse.</a>
                             </div>
                             <div className={stylesSobreMi.containerCert}>
-                                <div className={stylesSobreMi.imgCert}></div>   
+                                <div className={isMobile() ? stylesSobreMi.imgCertMobile : stylesSobreMi.imgCert}></div>   
                                 <a href="https://drive.google.com/file/d/1-fSeKz0kmdljEVF10Iv5vX8ddn-d325Q/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}>Certificación de curso de React Js en CoderHouse.</a>
                             </div>
                             <div className={stylesSobreMi.containerCert}>
-                                <div className={stylesSobreMi.imgCert}></div>
+                                <div className={isMobile() ? stylesSobreMi.imgCertMobile : stylesSobreMi.imgCert}></div>
                                 <a href="https://drive.google.com/file/d/1O_9AC48k6yHeGvytymF8yfKwHkaTRaJc/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}>Certificación de examen First Certificate en Cambridge.</a>   
                             </div>
                         </div>

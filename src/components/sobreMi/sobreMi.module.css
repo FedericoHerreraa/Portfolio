@@ -167,6 +167,13 @@
     height: 20px;
 }
 
+.imgCertMobile {
+    background-image: url('/src/img/certification-regular-24.png');
+    background-size: 100% 100%;
+    width: 30px;
+    height: 20px;
+}
+
 .containerCert a:hover {
     text-decoration: underline;
 }

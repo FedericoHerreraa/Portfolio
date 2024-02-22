@@ -30,15 +30,15 @@ const Header = () => {
     };
     
     return (
-        <div className={stylesHeader.containerOscuro}>
-            <div className={stylesHeader.headerContainerOscuro}>
+        <div className={stylesHeader.container}>
+            <div className={stylesHeader.headerContainer}>
                 <div className={stylesHeader.navInfo}>
                     <div onClick={desplazamientoProyectos}>
                         <h3>Proyectos</h3>
                     </div>
                     <button
                         type='button'
-                        className={stylesHeader.btnOscuro}
+                        className={stylesHeader.btn}
                     >
                         <CoffeeIcon fontSize='medium'/>
                     </button>

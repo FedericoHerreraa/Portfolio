@@ -4,13 +4,13 @@
     font-family: sans-serif;
 }
 
-.containerOscuro {
+.container {
     height: 100vh;
     background-color: #1c1c1c;
 }
 
 
-.headerContainerOscuro {
+.headerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
     color: #f2f2f2;
 }
 
-.headerContainerOscuro div {
+.headerContainer div {
     margin-top: 10px;
     padding: 10px;
 }
@@ -36,7 +36,7 @@
     margin-left: 20px;
 }
 
-.btnOscuro {
+.btn {
     margin-right: 40px;
     margin-left: 40px;
     background: none;
