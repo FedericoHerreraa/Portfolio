@@ -17,25 +17,67 @@ const SobreMi = () => {
                     <div className={stylesSobreMi.habilidades}>
                         <h2>Habilidades:</h2>
                         <ul className={stylesSobreMi.listado}>
-                            <li style={{ color: '#912d26' }}>HTML5</li>
-                            <li style={{ color: '#2a73a3' }}>CSS3</li>
-                            <li style={{ color: '#b8b663' }}>Python</li>
-                            <li style={{ color: '#bf802e' }}>JavaScript</li>
-                            <li style={{ color: '#4673d4' }}>TypeScript</li>
-                            <li style={{ color: '#2e799e' }}>React Js</li>
-                            <li style={{ color: '#29658a' }}>React Native</li>
-                            <li style={{ color: '#39916c' }}>Node Js</li>
-                            <li style={{ color: '#9c6c35' }}>SQL</li>
-                            <li style={{ color: '#2cb06e' }}>MongoDB</li>
+                            <div className={stylesSobreMi.containerTec}>
+                                <div className={stylesSobreMi.html}></div>
+                                <p style={{ color: '#912d26' }}>HTML5</p>
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>
+                                <div className={stylesSobreMi.css}></div>
+                                <p style={{ color: '#2a73a3' }}>CSS3</p>
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>     
+                                <div className={stylesSobreMi.python}></div>                           
+                                <p style={{ color: '#b8b663' }}>Python</p>
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>
+                                <div className={stylesSobreMi.javascript}></div>
+                                <p style={{ color: '#bf802e' }}>JavaScript</p>                                
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>
+                                <div className={stylesSobreMi.typescript}></div>
+                                <p style={{ color: '#4673d4' }}>TypeScript</p>                                
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>
+                                <div className={stylesSobreMi.react}></div>
+                                <p style={{ color: '#2e799e' }}>React Js</p>                            
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>
+                                <div className={stylesSobreMi.react}></div>
+                                <p style={{ color: '#29658a' }}>React Native</p>                                
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>
+                                <div className={stylesSobreMi.nodejs}></div>
+                                <p style={{ color: '#39916c' }}>Node Js</p>                                
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>
+                                <div className={stylesSobreMi.nestjs}></div>
+                                <p style={{ color: '#b5291f' }}>Nest js</p>                                
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>
+                                <div className={stylesSobreMi.mongo}></div>                                
+                                <p style={{ color: '#2cb06e' }}>MongoDB</p>
+                            </div>
                         </ul>
                     </div>
                     <div className={stylesSobreMi.certificaciones}>
                         <h2>Certificaciones:</h2>
                         <ul className={stylesSobreMi.listadoCertificaciones}>
-                            <a href="https://drive.google.com/file/d/1XT1YyTBEaPoMPOFklC4zEz1n4DS5gQkI/view?usp=sharing" target='blank'><li style={{ color: '#c4c4c4'}}>Certificación de curso de Aprende Programando de HTML5 y CSS3 con Bootstrap.</li></a>
-                            <a href="https://drive.google.com/file/d/1PPhAQjQGVKoO_EfYvlk8Ks1BbmbNTfZr/view?usp=sharing" target='blank'><li style={{ color: '#c4c4c4'}}>Certificación de curso de JavaScript en CoderHouse.</li></a>
-                            <a href="https://drive.google.com/file/d/1-fSeKz0kmdljEVF10Iv5vX8ddn-d325Q/view?usp=sharing" target='blank'><li style={{ color: '#c4c4c4'}}>Certificación de curso de React Js en CoderHouse.</li></a>
-                            <a href="https://drive.google.com/file/d/1O_9AC48k6yHeGvytymF8yfKwHkaTRaJc/view?usp=sharing" target='blank'><li style={{ color: '#c4c4c4'}}>Certificación de examen First Certificate en Cambridge.</li></a>   
+                            <div className={stylesSobreMi.containerCert}>
+                                <div className={stylesSobreMi.imgCert}></div>
+                                <a href="https://drive.google.com/file/d/1XT1YyTBEaPoMPOFklC4zEz1n4DS5gQkI/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}> Certificación de curso de HTML5 y CSS3 con Bootstrap.</a>
+                            </div>
+                            <div className={stylesSobreMi.containerCert}>
+                                <div className={stylesSobreMi.imgCert}></div>
+                                <a href="https://drive.google.com/file/d/1PPhAQjQGVKoO_EfYvlk8Ks1BbmbNTfZr/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}>Certificación de curso de JavaScript en CoderHouse.</a>
+                            </div>
+                            <div className={stylesSobreMi.containerCert}>
+                                <div className={stylesSobreMi.imgCert}></div>   
+                                <a href="https://drive.google.com/file/d/1-fSeKz0kmdljEVF10Iv5vX8ddn-d325Q/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}>Certificación de curso de React Js en CoderHouse.</a>
+                            </div>
+                            <div className={stylesSobreMi.containerCert}>
+                                <div className={stylesSobreMi.imgCert}></div>
+                                <a href="https://drive.google.com/file/d/1O_9AC48k6yHeGvytymF8yfKwHkaTRaJc/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}>Certificación de examen First Certificate en Cambridge.</a>   
+                            </div>
                         </ul>
                     </div>
                 </div>

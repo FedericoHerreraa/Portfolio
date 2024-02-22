@@ -7,7 +7,7 @@ const Header = () => {
     const esVistaMobile = () => window.innerWidth <= 768;
 
     const desplazamientoProyectos = () => {
-        const offset = esVistaMobile() ? window.innerHeight * 1.5 : window.innerHeight + window.innerHeight * 1.1;
+        const offset = esVistaMobile() ? window.innerHeight * 3.2 : window.innerHeight + window.innerHeight * 1.1;
         window.scrollTo({
             top: offset,
             behavior: 'smooth'
@@ -15,7 +15,7 @@ const Header = () => {
     };
     
     const desplazamientoContacto = () => {
-        const offset = esVistaMobile() ? window.innerHeight * 3 : window.innerHeight + window.innerHeight * 3;
+        const offset = esVistaMobile() ? window.innerHeight * 5 : window.innerHeight + window.innerHeight * 3;
         window.scrollTo({
             top: offset,
             behavior: 'smooth'
@@ -23,9 +23,8 @@ const Header = () => {
     };
     
     const desplazamiento = () => {
-        const offset = esVistaMobile() ? 0 : window.innerHeight;
         window.scrollTo({
-            top: offset,
+            top: window.innerHeight,
             behavior: 'smooth'
         });
     };

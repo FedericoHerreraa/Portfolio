@@ -85,6 +85,93 @@
     border-radius: 10px;
 }
 
+.containerTec {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.html {
+    background-image: url('/src/img/html5-logo-24.png');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.nodejs {
+    background-image: url('/src/img/nodejs-logo-48.png');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.react {
+    background-image: url('/src/img/react-logo-48.png');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.mongo {
+    background-image: url('/src/img/mongodb-logo-48.png');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.css {
+    background-image: url('/src/img/css3-logo-24.png');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.python {
+    background-image: url('/src/img/python-logo-24.png');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.javascript {
+    background-image: url('/src/img/javascript-logo-24.png');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.typescript {
+    background-image: url('/src/img/typescript-logo-24.png');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.nestjs {
+    background-image: url('/src/img/nestjs.svg');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.containerCert {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.imgCert {
+    background-image: url('/src/img/certification-regular-24.png');
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.containerCert a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
     .infoContainer {
         flex-direction: column;
