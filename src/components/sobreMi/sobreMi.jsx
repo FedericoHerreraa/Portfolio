@@ -61,7 +61,7 @@ const SobreMi = () => {
                     </div>
                     <div className={stylesSobreMi.certificaciones}>
                         <h2>Certificaciones:</h2>
-                        <ul className={stylesSobreMi.listadoCertificaciones}>
+                        <div className={stylesSobreMi.listadoCertificaciones}>
                             <div className={stylesSobreMi.containerCert}>
                                 <div className={stylesSobreMi.imgCert}></div>
                                 <a href="https://drive.google.com/file/d/1XT1YyTBEaPoMPOFklC4zEz1n4DS5gQkI/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}> Certificación de curso de HTML5 y CSS3 con Bootstrap.</a>
@@ -78,7 +78,7 @@ const SobreMi = () => {
                                 <div className={stylesSobreMi.imgCert}></div>
                                 <a href="https://drive.google.com/file/d/1O_9AC48k6yHeGvytymF8yfKwHkaTRaJc/view?usp=sharing" target='blank' style={{ color: '#c4c4c4'}}>Certificación de examen First Certificate en Cambridge.</a>   
                             </div>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>

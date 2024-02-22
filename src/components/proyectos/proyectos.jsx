@@ -16,6 +16,7 @@ const Proyectos = () => {
                 <h2>Aromas PLC</h2>
                 <p>Proyecto realizado para un emprendimiento de difusores y velas aromatizantes. Este proyecto está desarrollado en React Js para el Front-End y Node Js con Express Js y MongoDB para el Back-End.</p>
                 <div className={stylesProyectos.tecnologias}>
+                    <a href="https://devdocs.io/javascript/" target='blank' style={{ width: '12%', height: 'auto'}}><div className={stylesProyectos.javascriptLogo}></div></a>
                     <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto'}}><div className={stylesProyectos.reactLogo}></div></a>
                     <a href="https://nodejs.org/en" target='blank' style={{ width: '12%', height: 'auto'}}><div className={stylesProyectos.nodejsLogo}></div></a>
                     <a href="https://www.mongodb.com/es" target='blank' style={{ width: '12%', height: 'auto'}}><div className={stylesProyectos.mongodbLogo}></div></a>
@@ -30,7 +31,8 @@ const Proyectos = () => {
                 <h2>All New Style</h2>
                 <p>Proyecto realizado para un curso de React Js de CoderHouse. Este proyecto está desarrollado en React Js para el Front-End y Firebase para simular el Back-End</p>
                 <div className={stylesProyectos.tecnologias}>
-                <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto'}}><div className={stylesProyectos.reactLogo}></div></a>
+                    <a href="https://devdocs.io/javascript/" target='blank' style={{ width: '12%', height: 'auto'}}><div className={stylesProyectos.javascriptLogo}></div></a>
+                    <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto'}}><div className={stylesProyectos.reactLogo}></div></a>
                     <a href="https://firebase.google.com/?hl=es" target='blank' style={{ width: '12%', height: 'auto'}}><div className={stylesProyectos.firebaseLogo}></div></a>
                 </div>
                 <a href='https://allnewstyle-five.vercel.app/' target='blank'>

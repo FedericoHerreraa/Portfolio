@@ -55,8 +55,7 @@
 }
 
 .listadoCertificaciones {
-    padding: 30px;
-    margin-left: 5%;
+    padding-top: 20px;
     line-height: 45px;
     cursor: pointer;
 }

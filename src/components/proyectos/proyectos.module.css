@@ -81,6 +81,13 @@
     height: 25vw;
 }
 
+.javascriptLogo {
+    background-image: url('/src/img/javascript-logo-48.png');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
 .reactLogo {
     background-image: url('/src/img/react-logo-48.png');
     background-size: contain;
