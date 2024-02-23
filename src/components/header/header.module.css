@@ -6,7 +6,7 @@
 
 .container {
     height: 100vh;
-    background-color: #1c1c1c;
+    background-image: url('/src/img/download.jpeg');
 }
 
 

@@ -1,7 +1,7 @@
 
 
 .container {
-    background-color: #1c1c1c;
+    background-image: url('/src/img/download.jpeg');
     display: flex;
     flex-direction: column;
     height: 150vh;
