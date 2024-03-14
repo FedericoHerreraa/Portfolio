@@ -49,11 +49,10 @@
 }
 
 .imgPersonal {
-    background-image: url('/src/img/ftPersonal.jpg');
     background-size: cover;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 260px;
+    width: 230px;
 }
 
 .info div {

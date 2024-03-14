@@ -1,7 +1,16 @@
 import stylesSobreMi from './sobreMi.module.css'
 import CodeIcon from '@mui/icons-material/Code';
+import html from '../../img/html5-logo-24.png'
+import css from '../../img/css3-logo-24.png'
+import python from '../../img/python-logo-24.png'
+import javascript from '../../img/javascript-logo-24.png'
+import typescript from '../../img/typescript-logo-24.png'
+import react from '../../img/react-logo-24.png'
+import nodejs from '../../img/nodejs-logo-24.png'
+import nestjs from '../../img/nestjs.svg'
+import mongodb from '../../img/mongodb-logo-24.png'
 
-const SobreMi = () => {
+export default function SobreMi() {
     const isMobile = () => window.innerWidth <= 768;
 
     return (
@@ -20,43 +29,43 @@ const SobreMi = () => {
                         <h2>Habilidades:</h2>
                         <ul className={stylesSobreMi.listado}>
                             <div className={stylesSobreMi.containerTec}>
-                                <div className={stylesSobreMi.html}></div>
+                                <img src={html} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#912d26' }}>HTML5</p>
                             </div>
                             <div className={stylesSobreMi.containerTec}>
-                                <div className={stylesSobreMi.css}></div>
+                                <img src={css} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#2a73a3' }}>CSS3</p>
                             </div>
-                            <div className={stylesSobreMi.containerTec}>     
-                                <div className={stylesSobreMi.python}></div>                           
+                            <div className={stylesSobreMi.containerTec}>    
+                                <img src={python} alt="" className={stylesSobreMi.img}/> 
                                 <p style={{ color: '#b8b663' }}>Python</p>
                             </div>
                             <div className={stylesSobreMi.containerTec}>
-                                <div className={stylesSobreMi.javascript}></div>
+                                <img src={javascript} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#bf802e' }}>JavaScript</p>                                
                             </div>
                             <div className={stylesSobreMi.containerTec}>
-                                <div className={stylesSobreMi.typescript}></div>
+                                <img src={typescript} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#4673d4' }}>TypeScript</p>                                
                             </div>
                             <div className={stylesSobreMi.containerTec}>
-                                <div className={stylesSobreMi.react}></div>
+                                <img src={react} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#2e799e' }}>React Js</p>                            
                             </div>
                             <div className={stylesSobreMi.containerTec}>
-                                <div className={stylesSobreMi.react}></div>
+                                <img src={react} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#29658a' }}>React Native</p>                                
                             </div>
                             <div className={stylesSobreMi.containerTec}>
-                                <div className={stylesSobreMi.nodejs}></div>
+                                <img src={nodejs} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#39916c' }}>Node Js</p>                                
                             </div>
                             <div className={stylesSobreMi.containerTec}>
-                                <div className={stylesSobreMi.nestjs}></div>
+                                <img src={nestjs} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#b5291f' }}>Nest js</p>                                
                             </div>
                             <div className={stylesSobreMi.containerTec}>
-                                <div className={stylesSobreMi.mongo}></div>                                
+                                <img src={mongodb} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#2cb06e' }}>MongoDB</p>
                             </div>
                         </ul>
@@ -87,5 +96,3 @@ const SobreMi = () => {
         </div>
     )
 }
-
-export default SobreMi;

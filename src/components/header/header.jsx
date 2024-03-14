@@ -2,8 +2,10 @@
 import stylesHeader from './header.module.css'
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ftPersonal from '../../img/ftPersonal.jpg'
 
-const Header = () => {
+
+export default function Header() {
     const esVistaMobile = () => window.innerWidth <= 768;
 
     const desplazamientoProyectos = () => {
@@ -13,7 +15,7 @@ const Header = () => {
             behavior: 'smooth'
         });
     };
-    
+
     const desplazamientoContacto = () => {
         const offset = esVistaMobile() ? window.innerHeight * 5 : window.innerHeight + window.innerHeight * 3.5;
         window.scrollTo({
@@ -21,14 +23,14 @@ const Header = () => {
             behavior: 'smooth'
         });
     };
-    
+
     const desplazamiento = () => {
         window.scrollTo({
             top: window.innerHeight,
             behavior: 'smooth'
         });
     };
-    
+
     return (
         <div className={stylesHeader.container}>
             <div className={stylesHeader.headerContainer}>
@@ -40,7 +42,7 @@ const Header = () => {
                         type='button'
                         className={stylesHeader.btn}
                     >
-                        <CoffeeIcon fontSize='medium'/>
+                        <CoffeeIcon fontSize='medium' />
                     </button>
                     <div onClick={desplazamientoContacto}>
                         <h3>Contacto</h3>
@@ -49,17 +51,14 @@ const Header = () => {
             </div>
             <div className={stylesHeader.info}>
                 <div>
-                    <div className={stylesHeader.imgPersonal}>
-                    </div>
+                    <img src={ftPersonal} className={stylesHeader.imgPersonal}/>
                     <h1>Federico Herrera</h1>
-                    <p style={{ fontSize: '23px', marginTop: '20px'}}>Desarrollador web Full-Stack</p>
+                    <p style={{ fontSize: '23px', marginTop: '20px' }}>Desarrollador web Full-Stack</p>
                     <div onClick={desplazamiento} className={stylesHeader.icon}>
-                       <ExpandMoreIcon fontSize='large'/>
+                        <ExpandMoreIcon fontSize='large' />
                     </div>
                 </div>
             </div>
         </div>
-    )   
-} 
-
-export default Header
+    )
+}

@@ -1,7 +1,7 @@
 import stylesContacto from './contacto.module.css'
 import CodeIcon from '@mui/icons-material/Code';
 
-const Contacto = () => {
+export default function Contacto() {
     return (
         <div className={stylesContacto.container}>
             <div className={stylesContacto.title}>
@@ -42,5 +42,3 @@ const Contacto = () => {
         </div>
     )
 }
-
-export default Contacto
