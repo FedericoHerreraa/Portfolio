@@ -60,7 +60,7 @@ export default function Proyectos() {
                 </a>
             </div>
             <div className={stylesProyectos.proyecto}>
-                <h2>Task Manager</h2>
+                <h2>Administrador de tareas</h2>
                 <p>Proyecto personal realizado para IOS y Android en forma de práctica simulando un administrador de tareas donde cada una se puede dividir por prioridad. Cuenta con una autenticación completa hecha por mi en Nest js y tambien con la logica de una API Rest para la administración de tareas. Las tecnologías utilizadas son: FrontEnd: React Native + Typescript con Expo. BackEnd: Node Js con Nest Js y MongoDB.</p>
                 <div className={stylesProyectos.tecnologias}>
                     <a href="https://www.typescriptlang.org" target='blank' style={{ width: '12%', height: 'auto' }}><img src={typescript} className={stylesProyectos.logo} /></a>
