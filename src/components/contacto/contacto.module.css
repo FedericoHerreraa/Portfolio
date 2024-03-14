@@ -1,6 +1,5 @@
 
 .container {
-    /* background-color: #1c1c1c; */
     background-image: url('/src/img/download.jpeg');
     display: flex;
     flex-direction: column;
@@ -33,15 +32,10 @@
 .info {
     color: white;
     margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: 70vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
 }
+
 .info div {
     display: flex;
     align-items: center;
@@ -51,7 +45,6 @@
 .info div:hover {
     text-decoration: underline;
 }
-
 
 .info div a {
     display: flex;
@@ -63,39 +56,11 @@
     width: 300px;
 }
 
-.gmailLogo {
-    background-image: url('/src/img/gmail-logo-48.png');
+.logo {
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
-    margin-right: 0;
-}
-
-.phoneLogo {
-    background-image: url('/src/img/phone-solid-48.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-}
-
-.linkedinLogo {
-    background-image: url('/src/img/linkedin-logo-48.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    margin-right: 3%;
-}
-
-.githubLogo {
-    background-image: url('/src/img/github-logo-48.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    margin-right: 3%;
 }
 
 @media screen and (max-width: 768px) {
@@ -107,10 +72,7 @@
         font-size: 20px;
     }
 
-    .gmailLogo,
-    .githubLogo,
-    .linkedinLogo,
-    .phoneLogo {
+    .logo {
         width: 40px;
         height: 40px;
     }

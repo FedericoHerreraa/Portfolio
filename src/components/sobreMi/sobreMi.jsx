@@ -22,7 +22,7 @@ export default function SobreMi() {
             </div>
             <div className={stylesSobreMi.info}>
                 <div>
-                    <p>Hola! Mi nombre es Federico Herrera, tengo 19 años y actualmente estoy en el segundo año de la lincenciatura en sistemas en la Universidad Argentina de la Empresa. Me apasiona la tencología y la programación y es por eso que estoy constantemente aprendiendo nuevas teconologías. Tengo conocimientos en la programación web Front-End y Back-End, también en el diseño de algoritmos y en la arquitectura de Software.</p>
+                    <p>Hola! Mi nombre es Federico Herrera, tengo 19 años y actualmente estoy en el segundo año de la lincenciatura en sistemas en la Universidad Argentina de la Empresa. Me apasiona el mundo IT pero especificamente la programación y es por eso que estoy constantemente aprendiendo nuevas teconologías. Tengo conocimientos en la programación web Front-End y Back-End, también en el diseño de algoritmos y en la arquitectura de Software.</p>
                 </div>
                 <div className={stylesSobreMi.infoContainer}>
                     <div className={stylesSobreMi.habilidades}>
