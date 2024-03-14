@@ -14,8 +14,13 @@ import taskImg from '../../img/tasksImg.jpg'
 import createTaskImg from '../../img/createTaskImg.jpg'
 import profileImg from '../../img/profileImg.jpg'
 import nestjs from '../../img/nestjs.svg'
+import allnewStyleMob from '../../img/allnewScreenMob.png'
+import aromasScreenMob from '../../img/aromasScreenMob.jpg'
+import jardinScreenMob from '../../img/jardinScreenMob.jpg'
 
 export default function Proyectos() {
+    const isMobile = () => window.innerWidth <= 768;
+
     return (
         <div className={stylesProyectos.container}>
             <div style={{ paddingTop: '3%' }}>
@@ -36,12 +41,12 @@ export default function Proyectos() {
                 </div>
                 <a href='https://aromasplc.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <img src={aromasplc} className={stylesProyectos.screens} />
+                        <img src={isMobile() ? aromasScreenMob : aromasplc} className={isMobile() ? stylesProyectos.screensMobile : stylesProyectos.screens} />
                     </div>
                 </a>
             </div>
             <div className={stylesProyectos.proyecto}>
-                <h2>Jardin Mi Pequeño Mundo</h2>
+                <h2 style={isMobile() ? { fontSize: '21px' } : {}}>Jardin Mi Pequeño Mundo</h2>
                 <p>Proyecto realizado para un jardín de infantes y maternal con la idea de brindar información del mismo y cuales son los pasos para realizar las nuevas inscripciones. Cuenta con distintas apartados donde cada sección se encarga de mostrar una parte distinta de los jardines y una pagina de consultas donde se puede enviar preguntas al mail del jardín. Las tecnologías utilizadas son: FrontEnd: React Js + Typescript con tailwind css. BackEnd: Node Js con Express Js. Render y Vercel para el deploy.</p>
                 <div className={stylesProyectos.tecnologias}>
                     <a href="https://www.typescriptlang.org" target='blank' style={{ width: '12%', height: 'auto' }}><img src={typescript} className={stylesProyectos.logo} /></a>
@@ -50,13 +55,13 @@ export default function Proyectos() {
                 </div>
                 <a href='https://mi-pequeno-mundo2.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <img src={jardin} className={stylesProyectos.screens} />
+                        <img src={isMobile() ? jardinScreenMob : jardin} className={isMobile() ? stylesProyectos.screensMobile : stylesProyectos.screens} />
                     </div>
                 </a>
             </div>
             <div className={stylesProyectos.proyecto}>
-                <h2>Task Manager App</h2>
-                <p>Proyecto personal realizado en forma de practica simulando un administrador de tareas donde cada una se puede dividir por prioridad. Cuenta con una autenticación completa hecha por mi en Nest js y tambien con toda la logica de una API Rest para la administración de tareas. Las tecnologías utilizadas son: FrontEnd: React Native + Typescript con Expo. BackEnd: Node Js con Nest Js y MongoDB.</p>
+                <h2>Task Manager</h2>
+                <p>Proyecto personal realizado para IOS y Android en forma de practica simulando un administrador de tareas donde cada una se puede dividir por prioridad. Cuenta con una autenticación completa hecha por mi en Nest js y tambien con toda la logica de una API Rest para la administración de tareas. Las tecnologías utilizadas son: FrontEnd: React Native + Typescript con Expo. BackEnd: Node Js con Nest Js y MongoDB.</p>
                 <div className={stylesProyectos.tecnologias}>
                     <a href="https://www.typescriptlang.org" target='blank' style={{ width: '12%', height: 'auto' }}><img src={typescript} className={stylesProyectos.logo} /></a>
                     <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto' }}><img src={react} className={stylesProyectos.logo} /></a>
@@ -81,7 +86,7 @@ export default function Proyectos() {
                 </div>
                 <a href='https://allnewstyle-five.vercel.app/' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <img src={allnewstyle} className={stylesProyectos.screens} />
+                        <img src={isMobile() ? allnewStyleMob : allnewstyle} className={isMobile() ? stylesProyectos.screensMob : stylesProyectos.screens} />
                     </div>
                 </a>
             </div>

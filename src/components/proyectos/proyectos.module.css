@@ -79,6 +79,18 @@
     height: 25vw;
 }
 
+.screensMob {
+    width: 85vw;
+    height: 55vw;
+    border-radius: 10px;
+}
+
+.screensMobile {
+    width: 58vw;
+    height: 105vw;
+    border-radius: 10px;
+}
+
 .screensNative {
     width: 12vw;
     height: 23vw;
@@ -123,6 +135,17 @@
 
     .container {
         padding-top: 60px;
+    }
+
+    .screenNative {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .screensNative {
+        width: 38vw;
+        height: 68vw;
     }
 
 }
