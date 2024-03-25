@@ -114,6 +114,10 @@
         padding-bottom: 25%;
     }
 
+    .proyecto h2 {
+        margin-bottom: 20px;
+    }
+
     .tecnologias {
         width: 100%;
         margin-top: 10%;
