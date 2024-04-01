@@ -4,9 +4,7 @@ import javascript from '../../img/javascript-logo-48.png'
 import react from '../../img/react-logo-48.png'
 import nodejs from '../../img/nodejs-logo-48.png'
 import mongodb from '../../img/mongodb-logo-48.png'
-import firebase from '../../img/firebase-logo-48.png'
 import aromasplc from '../../img/aromasplcScreen.png'
-import allnewstyle from '../../img/allnewstyleScreen.png'
 import typescript from '../../img/typescript-logo-48.png'
 import jardin from '../../img/jardinScreen.png'
 import loginImg from '../../img/loginImg.jpg'
@@ -14,9 +12,13 @@ import taskImg from '../../img/tasksImg.jpg'
 import createTaskImg from '../../img/createTaskImg.jpg'
 import profileImg from '../../img/profileImg.jpg'
 import nestjs from '../../img/nestjs.svg'
-import allnewStyleMob from '../../img/allnewScreenMob.png'
 import aromasScreenMob from '../../img/aromasScreenMob.jpg'
 import jardinScreenMob from '../../img/jardinScreenMob.jpg'
+import html from '../../img/html5-logo-48.png'
+import css from '../../img/css3-logo-48.png'
+import menuResto from '../../img/menu.png'
+import carritoResto from '../../img/carrito.png'
+import formResto from '../../img/form.png'
 
 export default function Proyectos() {
     const isMobile = () => window.innerWidth <= 768;
@@ -28,6 +30,22 @@ export default function Proyectos() {
                     <CodeIcon fontSize='large' />
                     <h1>Proyectos</h1>
                     <CodeIcon fontSize='large' />
+                </div>
+            </div>
+            <div className={stylesProyectos.proyecto}>
+                <h2>Implementación de lógica de carrito</h2>
+                <p>Un cliente desde la plataforma de Workana me pidió hacer una implementación en su página web hecha con Hostinger Website Builder. La implementación consistía en agregar la lógica para comprar productos desde la misma página y que estos pedídos puedan llegar a un número de Whatsapp, con su respectíva lógica de carrito de compras y un checkout para que se pueda enviar el pedido. Las tecnologías que utilice fueron HTML, CSS, Javascript, Hostinger Website Builder.</p>
+                <div className={stylesProyectos.tecnologias}>
+                    <a href="https://devdocs.io/javascript/" target='blank' style={{ width: '12%', height: 'auto' }}><img src={html} className={stylesProyectos.logo} /></a>
+                    <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto' }}><img src={css} className={stylesProyectos.logo} /></a>
+                    <a href="https://firebase.google.com/?hl=es" target='blank' style={{ width: '12%', height: 'auto' }}><img src={javascript} className={stylesProyectos.logo} /></a>
+                </div>
+                <div className={stylesProyectos.screen}>
+                    <div style={{ display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
+                        <img src={menuResto} className={isMobile() ? stylesProyectos.screensRestoMob : stylesProyectos.screensResto} />
+                        <img src={carritoResto} className={isMobile() ? stylesProyectos.screensRestoMob : stylesProyectos.screensResto} />
+                    </div>
+                    <img src={formResto} style={isMobile() ? { width: '85vw', borderRadius: '10px'} : { borderRadius: '10px' }} />
                 </div>
             </div>
             <div className={stylesProyectos.proyecto}>
@@ -75,20 +93,6 @@ export default function Proyectos() {
                     <img src={createTaskImg} alt="" className={stylesProyectos.screensNative} />
                     <img src={profileImg} alt="" className={stylesProyectos.screensNative} />
                 </div>
-            </div>
-            <div className={stylesProyectos.proyecto}>
-                <h2>All New Style</h2>
-                <p>Proyecto realizado para el final del curso de React Js de CoderHouse. Este era un proyecto individual que consistia en crear una tienda web que tenga las funciones basicas como logica de carrito de compras, rutas protegidas, filtro de productos, etc. Este proyecto está desarrollado en React Js + Javascript para el Front-End y Firebase para simular el Back-End. Se hizo el despliegue en Vercel.</p>
-                <div className={stylesProyectos.tecnologias}>
-                    <a href="https://devdocs.io/javascript/" target='blank' style={{ width: '12%', height: 'auto' }}><img src={javascript} className={stylesProyectos.logo} /></a>
-                    <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto' }}><img src={react} className={stylesProyectos.logo} /></a>
-                    <a href="https://firebase.google.com/?hl=es" target='blank' style={{ width: '12%', height: 'auto' }}><img src={firebase} className={stylesProyectos.logo} /></a>
-                </div>
-                <a href='https://allnewstyle-five.vercel.app/' target='blank'>
-                    <div className={stylesProyectos.screen}>
-                        <img src={isMobile() ? allnewStyleMob : allnewstyle} className={isMobile() ? stylesProyectos.screensMob : stylesProyectos.screens} />
-                    </div>
-                </a>
             </div>
         </div>
     )

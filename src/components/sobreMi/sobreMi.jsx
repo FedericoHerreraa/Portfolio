@@ -9,6 +9,7 @@ import react from '../../img/react-logo-24.png'
 import nodejs from '../../img/nodejs-logo-24.png'
 import nestjs from '../../img/nestjs.svg'
 import mongodb from '../../img/mongodb-logo-24.png'
+import nextjs from '../../img/nextjs-icon-svgrepo-com.svg'
 
 export default function SobreMi() {
     const isMobile = () => window.innerWidth <= 768;
@@ -22,7 +23,7 @@ export default function SobreMi() {
             </div>
             <div className={stylesSobreMi.info}>
                 <div>
-                    <p>Hola! Mi nombre es Federico Herrera, tengo 19 años y actualmente estoy en el segundo año de la lincenciatura en sistemas en la Universidad Argentina de la Empresa. Me apasiona el mundo IT pero especificamente la programación y es por eso que estoy constantemente aprendiendo nuevas teconologías. Tengo conocimientos en la programación web Front-End y Back-End, también en el diseño de algoritmos y en la arquitectura de Software.</p>
+                    <p>Hola! Mi nombre es Federico Herrera, tengo 19 años y actualmente estoy en el segundo año de la lincenciatura en sistemas en la Universidad Argentina de la Empresa. Me apasiona el mundo IT pero especificamente la programación y es por eso que estoy constantemente aprendiendo nuevas teconologías. Tengo conocimientos en la programación web Front-End y Back-End, también en el diseño de algoritmos y en la arquitectura de Software. Actualmente soy desarrollador freelance trabajando desde la plataforma Workana.</p>
                 </div>
                 <div className={stylesSobreMi.infoContainer}>
                     <div className={stylesSobreMi.habilidades}>
@@ -51,6 +52,10 @@ export default function SobreMi() {
                             <div className={stylesSobreMi.containerTec}>
                                 <img src={react} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#2e799e' }}>React Js</p>                            
+                            </div>
+                            <div className={stylesSobreMi.containerTec}>
+                                <img src={nextjs} alt="" className={stylesSobreMi.img}/>
+                                <p style={{ color: '#2e799e' }}>Next Js</p>                            
                             </div>
                             <div className={stylesSobreMi.containerTec}>
                                 <img src={react} alt="" className={stylesSobreMi.img}/>
