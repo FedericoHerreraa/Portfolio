@@ -33,7 +33,7 @@ export default function Proyectos() {
                 </div>
             </div>
             <div className={stylesProyectos.proyecto}>
-                <h2>Implementación de lógica de carrito</h2>
+                <h2 style={isMobile() ? { fontSize: '21px' } : {}}>Implementación de lógica de carrito</h2>
                 <p>Un cliente desde la plataforma de Workana me pidió hacer una implementación en su página web hecha con Hostinger Website Builder. La implementación consistía en agregar la lógica para comprar productos desde la misma página y que estos pedídos puedan llegar a un número de Whatsapp, con su respectíva lógica de carrito de compras y un checkout para que se pueda enviar el pedido. Las tecnologías que utilice fueron HTML, CSS, Javascript, Hostinger Website Builder.</p>
                 <div className={stylesProyectos.tecnologias}>
                     <a href="https://devdocs.io/javascript/" target='blank' style={{ width: '12%', height: 'auto' }}><img src={html} className={stylesProyectos.logo} /></a>
