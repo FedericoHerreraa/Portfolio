@@ -9,7 +9,6 @@ import react from '../../img/react-logo-24.png'
 import nodejs from '../../img/nodejs-logo-24.png'
 import nestjs from '../../img/nestjs.svg'
 import mongodb from '../../img/mongodb-logo-24.png'
-import nextjs from '../../img/nextjs-icon-svgrepo-com.svg'
 
 export default function SobreMi() {
     const isMobile = () => window.innerWidth <= 768;
@@ -52,10 +51,6 @@ export default function SobreMi() {
                             <div className={stylesSobreMi.containerTec}>
                                 <img src={react} alt="" className={stylesSobreMi.img}/>
                                 <p style={{ color: '#2e799e' }}>React Js</p>                            
-                            </div>
-                            <div className={stylesSobreMi.containerTec}>
-                                <img src={nextjs} alt="" className={stylesSobreMi.img}/>
-                                <p style={{ color: '#2e799e' }}>Next Js</p>                            
                             </div>
                             <div className={stylesSobreMi.containerTec}>
                                 <img src={react} alt="" className={stylesSobreMi.img}/>
