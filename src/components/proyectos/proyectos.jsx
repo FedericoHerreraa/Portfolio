@@ -19,6 +19,7 @@ import css from '../../img/css3-logo-48.png'
 import menuResto from '../../img/menu.png'
 import carritoResto from '../../img/carrito.png'
 import formResto from '../../img/form.png'
+import { GitHub } from '@mui/icons-material';
 
 export default function Proyectos() {
     const isMobile = () => window.innerWidth <= 768;
@@ -40,12 +41,16 @@ export default function Proyectos() {
                     <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto' }}><img src={css} className={stylesProyectos.logo} /></a>
                     <a href="https://firebase.google.com/?hl=es" target='blank' style={{ width: '12%', height: 'auto' }}><img src={javascript} className={stylesProyectos.logo} /></a>
                 </div>
+                <a href='https://github.com/FedericoHerreraa/implementacion-carrito' target='blank' className={stylesProyectos.github}>
+                    <GitHub/>
+                    <h4>Código disponible</h4>
+                </a>
                 <div className={stylesProyectos.screen}>
                     <div style={{ display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
                         <img src={menuResto} className={isMobile() ? stylesProyectos.screensRestoMob : stylesProyectos.screensResto} />
                         <img src={carritoResto} className={isMobile() ? stylesProyectos.screensRestoMob : stylesProyectos.screensResto} />
                     </div>
-                    <img src={formResto} style={isMobile() ? { width: '85vw', borderRadius: '10px'} : { borderRadius: '10px' }} />
+                    <img src={formResto} style={isMobile() ? { width: '85vw', borderRadius: '10px'} : { borderRadius: '10px', width: '40vw' }} />
                 </div>
             </div>
             <div className={stylesProyectos.proyecto}>
@@ -56,6 +61,16 @@ export default function Proyectos() {
                     <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto' }}><img src={react} className={stylesProyectos.logo} /></a>
                     <a href="https://nodejs.org/en" target='blank' style={{ width: '12%', height: 'auto' }}><img src={nodejs} className={stylesProyectos.logo} /></a>
                     <a href="https://www.mongodb.com/es" target='blank' style={{ width: '12%', height: 'auto' }}><img src={mongodb} className={stylesProyectos.logo} /></a>
+                </div>
+                <div className={{ display: 'flex', gap: '10px', flexDirection: 'row' }}>
+                    <a href='https://github.com/FedericoHerreraa/AROMAS_PLC' target='blank' className={stylesProyectos.github}>
+                        <GitHub/>
+                        <h4>Código frontend</h4>
+                    </a>
+                    <a href='https://github.com/FedericoHerreraa/aromasplcBackend' target='blank' className={stylesProyectos.github}>
+                        <GitHub/>
+                        <h4>Código backend</h4>
+                    </a>
                 </div>
                 <a href='https://aromasplc.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
@@ -71,6 +86,10 @@ export default function Proyectos() {
                     <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto' }}><img src={react} className={stylesProyectos.logo} /></a>
                     <a href="https://nodejs.org/en" target='blank' style={{ width: '12%', height: 'auto' }}><img src={nodejs} className={stylesProyectos.logo} /></a>
                 </div>
+                <a href='https://github.com/FedericoHerreraa/MiPequenoMundo' target='blank' className={stylesProyectos.github}>
+                    <GitHub/>
+                    <h4>Código disponible</h4>
+                </a>
                 <a href='https://mi-pequeno-mundo2.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
                         <img src={isMobile() ? jardinScreenMob : jardin} className={isMobile() ? stylesProyectos.screensMobile : stylesProyectos.screens} />
@@ -86,6 +105,16 @@ export default function Proyectos() {
                     <a href="https://nodejs.org/en" target='blank' style={{ width: '12%', height: 'auto' }}><img src={nodejs} className={stylesProyectos.logo} /></a>
                     <a href="https://nestjs.com" target='blank' style={{ width: '12%', height: 'auto' }}><img src={nestjs} className={stylesProyectos.logo} /></a>
                     <a href="https://www.mongodb.com/es" target='blank' style={{ width: '12%', height: 'auto' }}><img src={mongodb} className={stylesProyectos.logo} /></a>
+                </div>
+                <div className={{ display: 'flex', gap: '10px', flexDirection: 'row' }}>
+                    <a href='https://github.com/FedericoHerreraa/TaskManagerExpoApp' target='blank' className={stylesProyectos.github}>
+                        <GitHub/>
+                        <h4>Código frontend</h4>
+                    </a>
+                    <a href='https://github.com/FedericoHerreraa/nest-auth' target='blank' className={stylesProyectos.github}>
+                        <GitHub/>
+                        <h4>Código backend</h4>
+                    </a>
                 </div>
                 <div className={stylesProyectos.screenNative}>
                     <img src={loginImg} className={stylesProyectos.screensNative} />

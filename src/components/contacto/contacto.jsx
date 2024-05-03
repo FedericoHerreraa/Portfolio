@@ -38,7 +38,7 @@ export default function Contacto() {
                     <a href="https://github.com/FedericoHerreraa" target='blank'>
                         <img src={githubLogo} alt="" className={stylesContacto.logo}/>
                         <div style={{ marginLeft: '20px'}}>
-                            <h2> FedericoHerreraa</h2>
+                            <h2>FedericoHerreraa</h2>
                         </div>
                     </a>
                 </div>

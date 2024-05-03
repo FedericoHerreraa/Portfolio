@@ -52,19 +52,18 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    margin-top: 5%;
+    margin-top: 20px;
 }
 
 .tecnologias a img {
-    margin-right: 10px;
-    margin-left: 10px;
     cursor: pointer;
 }
 
 .screen {
     margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .screenNative {
@@ -113,6 +112,28 @@
     background-size: contain;
     width: 50px;
     height: 50px;
+}
+
+.github {
+    background-size: contain;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 3px 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 180px;
+    height: 30px;
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+
+.github:hover {
+    color: rgb(49, 49, 233);
 }
 
 
