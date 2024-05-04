@@ -15,8 +15,6 @@ import graduation from '../../img/graduation-solid-36.png'
 
 
 export default function SobreMi() {
-    // const isMobile = () => window.innerWidth <= 768;
-
     return (
         <div className={stylesSobreMi.container}>
             <div className={stylesSobreMi.titulo}>

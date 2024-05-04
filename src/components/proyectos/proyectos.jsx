@@ -34,7 +34,7 @@ export default function Proyectos() {
                 </div>
             </div>
             <div className={stylesProyectos.proyecto}>
-                <h2 style={isMobile() ? { fontSize: '16px' } : {}}>Implementación de lógica de carrito</h2>
+                <h2 style={isMobile() ? { fontSize: '20px'} : {} }>Implementación de lógica de carrito</h2>
                 <p>Un cliente desde la plataforma de Workana me pidió hacer una implementación en su página web hecha con Hostinger Website Builder. La implementación consistía en agregar la lógica para comprar productos desde la misma página y que estos pedídos puedan llegar a un número de Whatsapp, con su respectíva lógica de carrito de compras y un checkout para que se pueda enviar el pedido. Las tecnologías que utilice fueron HTML, CSS, Javascript, Hostinger Website Builder.</p>
                 <div className={stylesProyectos.tecnologias}>
                     <a href="https://devdocs.io/javascript/" target='blank' style={{ width: '12%', height: 'auto' }}><img src={html} className={stylesProyectos.logo} /></a>
@@ -79,7 +79,7 @@ export default function Proyectos() {
                 </a>
             </div>
             <div className={stylesProyectos.proyecto}>
-                <h2 style={isMobile() ? { fontSize: '21px' } : {}}>Jardín Mi Pequeño Mundo</h2>
+                <h2>Jardín Mi Pequeño Mundo</h2>
                 <p>Proyecto realizado para un jardín de infantes y maternal con la idea de brindar información del mismo y cuales son los pasos para realizar las nuevas inscripciones. Cuenta con distintas apartados donde cada sección se encarga de mostrar una parte distinta de los jardines y una pagina de consultas donde se puede enviar preguntas al mail del jardín. Las tecnologías utilizadas son: FrontEnd: React Js + Typescript con tailwind css. BackEnd: Node Js con Express Js. Render y Vercel para el deploy.</p>
                 <div className={stylesProyectos.tecnologias}>
                     <a href="https://www.typescriptlang.org" target='blank' style={{ width: '12%', height: 'auto' }}><img src={typescript} className={stylesProyectos.logo} /></a>
@@ -97,7 +97,7 @@ export default function Proyectos() {
                 </a>
             </div>
             <div className={stylesProyectos.proyecto}>
-                <h2 style={isMobile() ? { fontSize: '21px' } : {}}>Administrador de tareas</h2>
+                <h2>Administrador de tareas</h2>
                 <p>Proyecto personal realizado para IOS y Android en forma de práctica simulando un administrador de tareas donde cada una se puede dividir por prioridad. Cuenta con una autenticación completa hecha por mi en Nest js y tambien con la logica de una API Rest para la administración de tareas. Las tecnologías utilizadas son: FrontEnd: React Native + Typescript con Expo. BackEnd: Node Js con Nest Js y MongoDB.</p>
                 <div className={stylesProyectos.tecnologias}>
                     <a href="https://www.typescriptlang.org" target='blank' style={{ width: '12%', height: 'auto' }}><img src={typescript} className={stylesProyectos.logo} /></a>
