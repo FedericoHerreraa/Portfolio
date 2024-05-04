@@ -92,29 +92,14 @@
 
 .img {
     background-size: 100% 100%;
-    width: 20px;
-    height: 20px;
+    width: 70px;
+    height: 70px;
 }
 
 .containerCert {
     display: flex;
     gap: 20px;
     align-items: center;
-}
-
-
-.imgCert {
-    background-image: url('/src/img/certification-regular-24.png');
-    background-size: 100% 100%;
-    width: 20px;
-    height:17px;
-}
-
-.imgCertMobile {
-    background-image: url('/src/img/certification-regular-24.png');
-    background-size: 100% 100%;
-    width: 30px;
-    height: 20px;
 }
 
 .containerCert a:hover {

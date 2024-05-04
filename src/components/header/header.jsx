@@ -1,9 +1,7 @@
 
 import stylesHeader from './header.module.css'
-import CoffeeIcon from '@mui/icons-material/Coffee';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ftPersonal from '../../img/ftPersonal.jpg'
-
 
 export default function Header() {
     const esVistaMobile = () => window.innerWidth <= 768;
@@ -17,7 +15,7 @@ export default function Header() {
     };
 
     const desplazamientoContacto = () => {
-        const offset = esVistaMobile() ? window.innerHeight * 5 : window.innerHeight + window.innerHeight * 3.5;
+        const offset = document.body.scrollHeight - window.innerHeight;
         window.scrollTo({
             top: offset,
             behavior: 'smooth'
@@ -31,6 +29,16 @@ export default function Header() {
         });
     };
 
+    const descargarCV = () => {
+        const enlace = document.createElement('a');
+        enlace.href = '/CV%20Federico%20Herrera.pdf'; 
+        enlace.download = 'FedericoHerreraCV.pdf'; 
+
+        document.body.appendChild(enlace);
+        enlace.click();
+        document.body.removeChild(enlace);
+    };
+
     return (
         <div className={stylesHeader.container}>
             <div className={stylesHeader.headerContainer}>
@@ -38,11 +46,8 @@ export default function Header() {
                     <div onClick={desplazamientoProyectos}>
                         <h3>Proyectos</h3>
                     </div>
-                    <button
-                        type='button'
-                        className={stylesHeader.btn}
-                    >
-                        <CoffeeIcon fontSize='medium' />
+                    <button className={stylesHeader.cv} onClick={descargarCV}>
+                        <p>Descargar CV</p>
                     </button>
                     <div onClick={desplazamientoContacto}>
                         <h3>Contacto</h3>

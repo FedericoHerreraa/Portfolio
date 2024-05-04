@@ -27,6 +27,7 @@
 .navInfo {
     display: flex;
     justify-content: center;
+    gap: 20px;
     cursor: pointer;
     align-items: center;
 }
@@ -75,15 +76,33 @@
  
 .info div h1 {
     color: #5c7196;
-}
-
-.info div h1 {
-    color: #404d63;
+    font-family: inherit;
+    margin-top: 20px;
 }
 
 .icon {
-    margin-top: 10%;
     cursor: pointer;
+}
+
+.cv {
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0px;
+    background-color: rgb(44, 44, 105);
+    border-radius: 30px;
+    transition: all 0.2s;
+    border: none;
+    padding: 5px 10px;
+}   
+
+.cv:hover {
+    background-color: rgb(76, 76, 177);
+}
+
+.cv p {
+    padding: 4px 10px;  
+    font-size: 14px;
+    color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -94,5 +113,9 @@
     .info div h1 {
         font-size: 45px;
         margin-top: 35px;
+    }
+
+    .navInfo {
+        gap: 10px;
     }
 }

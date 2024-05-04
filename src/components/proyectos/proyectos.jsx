@@ -55,7 +55,7 @@ export default function Proyectos() {
             </div>
             <div className={stylesProyectos.proyecto}>
                 <h2>Aromas PLC</h2>
-                <p>Proyecto realizado para un emprendimiento de difusores y velas aromatizantes. Se buscó un diseño adaptativo que vaya con el estilos de los difusores de ambiente creando una combinación de colores unica. Esta pagina te permite realizar compras y enviar consultas para que lleguen al mail. Este proyecto está desarrollado en React Js + Javascript para el Front-End y Node Js con Express Js y MongoDB para el Back-End. Para el despliegue se utilizo Vercel, Render y MongoDb atlas.</p>
+                <p>Proyecto realizado para un emprendimiento de difusores y velas aromáticas. Se buscó un diseño adaptativo que vaya con el estilos de los difusores de ambiente creando una combinación de colores unica. La página te permite realizar compras y enviar consultas para que lleguen a una casilla de mail. Este proyecto está desarrollado en React Js + Javascript para el Front-End y Node Js con Express Js y MongoDB para el Back-End. Para el despliegue se utilizo Vercel, Render y MongoDb atlas.</p>
                 <div className={stylesProyectos.tecnologias}>
                     <a href="https://devdocs.io/javascript/" target='blank' style={{ width: '12%', height: 'auto' }}><img src={javascript} className={stylesProyectos.logo} /></a>
                     <a href="https://react.dev" target='blank' style={{ width: '12%', height: 'auto' }}><img src={react} className={stylesProyectos.logo} /></a>
@@ -79,7 +79,7 @@ export default function Proyectos() {
                 </a>
             </div>
             <div className={stylesProyectos.proyecto}>
-                <h2 style={isMobile() ? { fontSize: '21px' } : {}}>Jardin Mi Pequeño Mundo</h2>
+                <h2 style={isMobile() ? { fontSize: '21px' } : {}}>Jardín Mi Pequeño Mundo</h2>
                 <p>Proyecto realizado para un jardín de infantes y maternal con la idea de brindar información del mismo y cuales son los pasos para realizar las nuevas inscripciones. Cuenta con distintas apartados donde cada sección se encarga de mostrar una parte distinta de los jardines y una pagina de consultas donde se puede enviar preguntas al mail del jardín. Las tecnologías utilizadas son: FrontEnd: React Js + Typescript con tailwind css. BackEnd: Node Js con Express Js. Render y Vercel para el deploy.</p>
                 <div className={stylesProyectos.tecnologias}>
                     <a href="https://www.typescriptlang.org" target='blank' style={{ width: '12%', height: 'auto' }}><img src={typescript} className={stylesProyectos.logo} /></a>
