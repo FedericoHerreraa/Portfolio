@@ -47,8 +47,8 @@ export default function Proyectos() {
                 </a>
                 <div className={stylesProyectos.screen}>
                     <div style={{ display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
-                        <img src={menuResto} className={isMobile() ? stylesProyectos.screensRestoMob : stylesProyectos.screensResto} />
-                        <img src={carritoResto} className={isMobile() ? stylesProyectos.screensRestoMob : stylesProyectos.screensResto} />
+                        <img src={menuResto} className={stylesProyectos.screensResto} />
+                        <img src={carritoResto} className={stylesProyectos.screensResto} />
                     </div>
                     <img src={formResto} style={isMobile() ? { width: '85vw', borderRadius: '10px'} : { borderRadius: '10px', width: '40vw' }} />
                 </div>
@@ -72,9 +72,9 @@ export default function Proyectos() {
                         <h4>Código backend</h4>
                     </a>
                 </div>
-                <a href='https://aromasplc.vercel.app' target='blank'>
+                <a href='https://aromasplc.vercel.app' target='blank' rel='noopener noreferrer'>
                     <div className={stylesProyectos.screen}>
-                        <img src={isMobile() ? aromasScreenMob : aromasplc} className={isMobile() ? stylesProyectos.screensMobile : stylesProyectos.screens} />
+                        <img src={isMobile() ? aromasScreenMob : aromasplc} className={stylesProyectos.screens} />
                     </div>
                 </a>
             </div>
@@ -92,7 +92,7 @@ export default function Proyectos() {
                 </a>
                 <a href='https://mi-pequeno-mundo2.vercel.app' target='blank'>
                     <div className={stylesProyectos.screen}>
-                        <img src={isMobile() ? jardinScreenMob : jardin} className={isMobile() ? stylesProyectos.screensMobile : stylesProyectos.screens} />
+                        <img src={isMobile() ? jardinScreenMob : jardin} className={stylesProyectos.screens} />
                     </div>
                 </a>
             </div>
