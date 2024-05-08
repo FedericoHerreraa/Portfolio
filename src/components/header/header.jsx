@@ -41,7 +41,7 @@ export default function Header() {
 
     return (
         <div className={stylesHeader.container}>
-            <div className={stylesHeader.headerContainer}>
+            <header className={stylesHeader.headerContainer}>
                 <div className={stylesHeader.navInfo}>
                     <div onClick={desplazamientoProyectos}>
                         <h3>Proyectos</h3>
@@ -53,7 +53,7 @@ export default function Header() {
                         <h3>Contacto</h3>
                     </div>
                 </div>
-            </div>
+            </header>
             <div className={stylesHeader.info}>
                 <div>
                     <img src={ftPersonal} className={stylesHeader.imgPersonal}/>
